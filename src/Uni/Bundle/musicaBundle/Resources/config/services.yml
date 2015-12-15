@@ -1,0 +1,4 @@
+services:
+#    uni_musica.example:
+#        class: Uni\Bundle\musicaBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

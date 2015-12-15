@@ -1,0 +1,36 @@
+{% extends "uniMusicaBundle::layout.html.twig" %}
+
+
+    
+
+
+{% block central %}
+
+    
+                
+    <p>
+
+
+   {% for unafila in grupos %}
+
+   <h4> <a href="{{path('uni_grupos', {'titulo':unafila.titulo, 'descripcion':unafila.descripcion, 'foto':unafila.foto, 'articulo':unafila.articulo})
+	  }}">
+           {{unafila.titulo}}</a></h4><br>
+              {{unafila.descripcion}}<br>
+             <br><img src="{{ asset('bundles/unimusica/imagenes/'~ unafila.foto  ~ '') }}" width=20% height=20%/>
+             <br><br><br>
+     
+    {% endfor %}
+
+    <br>
+    <br>
+ 
+
+</p>
+   
+ {% endblock %}
+   
+   
+   
+   
+  

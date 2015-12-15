@@ -1,0 +1,23 @@
+{% extends "uniMusicaBundle::layout.html.twig" %}
+
+{% block cuerpo %}
+<h1>{{ titulo }}</h1>
+
+<br>
+
+<h3>{{ descripcion }}</h3>
+<br><br>
+{{articulo}}
+<br>
+
+
+<br>
+<img src="{{ asset('bundles/unimusica/imagenes/'~ foto  ~ '') }}" width=40% height=40%/>
+
+<br>
+<br>
+  <a href="{{
+   path('uni_musica')
+   }}">Volver</a>
+   {% endblock %}
+ 

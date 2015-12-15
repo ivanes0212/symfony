@@ -1,0 +1,10 @@
+uni_musica_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: uniMusicaBundle:Default:index }
+uni_musica:
+    path:     /musica
+    defaults: { _controller: uniMusicaBundle:Default:musica }
+uni_grupos:
+    path:     /grupos/{titulo}/{descripcion}/{foto}/{articulo}
+    defaults: { _controller: uniMusicaBundle:Default:grupos }
+

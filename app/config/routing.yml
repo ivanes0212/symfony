@@ -1,0 +1,4 @@
+uni_musica:
+    resource: "@uniMusicaBundle/Resources/config/routing.yml"
+    prefix:   /
+
